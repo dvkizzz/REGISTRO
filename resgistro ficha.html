@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Alumnos</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .header {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            padding: 30px;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+
+        .container {
+            width: 500px;
+            margin: 40px auto;
+            background: rgb(235, 225, 225);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .volver {
+            text-decoration: none;
+            color: #1976d2;
+            font-size: 14px;
+        }
+
+        h2 {
+            margin-top: 10px;
+        }
+
+        hr {
+            margin: 15px 0;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #000000;
+        }
+
+        .btn {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background-color: #0d1b2a;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #1b263b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Registro de Alumnos</h1>
+    </div>
+
+    <div class="container">
+        <a href="index.html" class="volver">← Volver al Listado</a>
+
+        <h2>Ficha de Matrícula</h2>
+        <p>Complete los datos del nuevo estudiante.</p>
+        <hr>
+
+        <form>
+            <label>Nombres Completos:</label>
+            <input type="text" placeholder="Ej. Ana Lucía" required>
+
+            <label>Apellidos:</label>
+            <input type="text" placeholder="Ej. Torres Vega" required>
+
+            <label>Correo Electrónico:</label>
+            <input type="email" placeholder="alumno@instituto.edu.pe" required>
+
+            <label>Carrera:</label>
+            <select required>
+                <option value="">-- Seleccionar --</option>
+                <option>Ingeniería de Sistemas</option>
+                <option>Administración</option>
+                <option>Contabilidad</option>
+                <option>Diseño Gráfico</option>
+            </select>
+
+            <button type="submit" class="btn"> GUARDAR DATOS</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
